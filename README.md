@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+Part 4 : Make redux wrapper
+    1. Make all files(Action, Reducer, store)
+    2. Make wrapper around React App
+        2.1. Provider in index.js(Wrapper)
+    3. Make Redux Store
+    4. Interview Question
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Workflow: 
 
-In the project directory, you can run:
+        Action -------> Reducer --------> Store ----
+           /\                                       |
+           |                                        |
+           |        Redux Architecture              |
+           |                                        |
+           |                                        |
+            ----------- View <-----------------------
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+View : will be wrapped with provider which helps to connect from react with redux
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Folder Creation:🗂
+    Redux📂: can be named any
+        Files:▤
+            - action.js
+            - reducer.js
+            - rootReducer.js - to make connection or combine 
+            - store.js
+            - saga will also be created if you use it
+    
+        Now Wrap with Redux Provider in index.js(main file)
+            - creating provider
+                - Provider comes with attributes of store , i.e : store={props}, without this your app will break
+                - ? what is store - Store is a place where all your data is kept 
+                - so now work in store file - to create store
+                - once you pass as a props store to index.js, to connect your store should link with reducer
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Interview Questions: 
+1. What is the use of provider ?
+    => It is imported from react-redux, it's work is to connect react with redux
 
-### `npm run build`
+2. What is store ?
+    => The connection that we are making with react-redux , store keeps all the data of application. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. What is the input and output of Store ?
+    => Input of store is : `` Reducer ``  : output of Store is :`` createStore function which helps to inject data into our application ``
+##### ☣️ in next branch we will create - action & reducer 
