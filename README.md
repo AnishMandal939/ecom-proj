@@ -85,3 +85,29 @@ In this session we'll learn how actions are created, called, thumbrules of redux
             -> call is done through useDispatch hook, which is provided by react-redux, action work is to  get data from react and send to reducer
         4.2. How action know where to send data ?
             -> it is known with the help of key 'type' 
+
+---------------------------------------------
+
+### ✅ ☀️ day 3: Reducer
+Topics Covered: 
+    1. What is reducer
+
+        1.1. Reducer handle data for store i.e how data will pass from react to store this is decided by reducer
+        
+        1.2. Update Data in store
+        1.3. Rules:
+            1.3.1. Need Root Reducer
+            1.3.2. Reducer must return the some value
+            1.3.3. The reducer must have some initial value
+
+    2. Make Reducer
+    3. Make RootReducer
+    4. Test data flow
+    5. Interview Questions
+    
+
+- Explain : 
+-   - When we called action by clicking addToCart button how reducer knew what action to call i.e i mean to say there could be many action instead of single action i.e addToCart there'd have : removeFromCart, UpdateCart, DeleteCart etc. so to maintain this we use help of type : remember we declared in action , generally we do it by using switch case statement , but lets first do it by if else then we will learn with switch case - more in reducer.js
+
+
+- - we use constant.js - to keep everything in same place in case we made some mistake we dont need to look through every page where ever we've used so every type of action is kept inside constant.js
