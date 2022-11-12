@@ -218,4 +218,26 @@ Topics Covered:
 
 ### day -9 JSON server | How to make API with JSON server
 
+-   Topics 🛐 Covered
 
+    - SETUP JSON SERVER API
+        - Why we need JSON server api
+            - What is JSON server ? -> it helps to create fake Api's, to make work with api's
+            - it is called fake api because we cannot connect database with it , but yes we can perform CRUD operation here also in fake data, but all data will be static not dynamic just because cannot make connection with database
+
+        - install JSON server
+            - npm i -g json-server | go to jsonplaceholder.typicode.com -> click to json server -> redirects to github page there you'll see all documentation
+            - for mac users - sudo npm install -g json-server
+            - enter your system password when it prompts to enter password in terminal
+            - create db folder anywhere : i'm creating outside of project folder
+            - create file `db.json`
+        - Add data & run json server
+            - added data to db.json & to run it : `json-server --watch db.json`
+            - by default it run on port 3000 - to run in different port use :
+            - `json-server --watch db.json --port 3500`
+        - Test Api with postman
+        - Interview Question
+        
+----------------------
+
+### day -10 
