@@ -100,10 +100,22 @@ Topics Covered:
             1.3.2. Reducer must return the some value
             1.3.3. The reducer must have some initial value
 
+
+            Workflow: 
+
+        Action -------> Reducer ---rootReducer-----> Store ----
+           /\                                                   |
+           |                                                    |
+           |        Redux Architecture                          |
+           |                                                    |
+           |                                                    |
+            ----------- View <----------------------------------
+
     2. Make Reducer
     3. Make RootReducer
     4. Test data flow
     5. Interview Questions
+        5.1 - Do data persists when we refres page ? - No that is why we initialize some default value in reducer
     
 
 - Explain : 
@@ -111,3 +123,20 @@ Topics Covered:
 
 
 - - we use constant.js - to keep everything in same place in case we made some mistake we dont need to look through every page where ever we've used so every type of action is kept inside constant.js
+
+---------------------------------------
+### day -4 ✅ 🎛 switch case for reducer
+
+###### Switch Statement in reducer
+
+-   Why need Switch statement inside Reducer
+
+        1. Because, our system can have many action to perform and if else is good for 2-3 cases but if when it starts getting larger it is not taken as a good practicner. - reducer
+
+-   Make Switch Statement
+-   Check Some with Switch Statement
+
+
+### day -5 🤔 ✅ ▤ get data from redux to component
+
+
