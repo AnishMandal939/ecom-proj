@@ -176,3 +176,23 @@ Topics Covered:
 
 ### day -7 Redux Toolkit 🛠 new action reducer file ▤
 
+-   Topics 🛐 Covered
+
+-   Make Action & Reducer in New File
+    - creating a new file - productAction
+-   Add Redux ToolKit
+    - Why need reduxToolkit ? 
+        - if we remember in store.js , we've used createStore "it comes with linethrough in createStore" because it is depriciated, so in place of createStore we need to use configure store
+        - and configureStore comes with reduxToolkit not with redux 
+        - to use it install : npm i @reduxjs/toolkit - after install use it in store.js
+
+-   Why we need Saga Live Example
+    - any where we make api call we use saga: to handle async data
+        - calling api in productAction without saga &
+        - discussing about in productAction only about 
+
+----------------------
+
+### day -8 : Configure Saga 🔯 🖖 ( Middleware to handle promise )
+
+
