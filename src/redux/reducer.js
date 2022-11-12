@@ -32,8 +32,7 @@ export const cartData = (data=[], action) => {
         case REMOVE_FROM_CART:
             // logic here, eg: addToCart
             console.warn("remove from cart called", action);
-            // return 1-1;
-            return [action.data, ...data]
+            return 1-1;
         default:
             // no case matched 
             // return 'no action called';
