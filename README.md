@@ -151,3 +151,28 @@ Topics Covered:
 
         1. How can you get data from redux to react ? -> using useSelector hook
         2. where you can make use of useSelector hook ? while fetching data from redux to react
+
+-------------------------------
+
+### day -6 Remove cart ❌ and empty cart 📭
+
+-   Topics 🛐 covered :
+    - Make more action and reducers
+        - action & reducer for both action and reducers
+
+    - Make remove from the cart and empty cart Button
+        - to call those action & reducer we make a button
+
+    - Actions and Reducers for both
+        - 
+    - Update Cart Count in Data in Header Component
+    - Interview Question
+        - In this example we haven't seen if arr.length less than 0 then how can we handle this ? this might can be the question => we can make conditional chaining if data.length present  call it else empty 
+        - i.e  data.length = data.length ? data.length-1:[];
+
+- We haven't started saga till now we'll be learning and exploring saga (for dynamic data manipulation)
+
+-------------------------------
+
+### day -7 Redux Toolkit 🛠 new action reducer file ▤
+

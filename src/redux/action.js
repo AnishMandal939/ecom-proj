@@ -1,6 +1,6 @@
 // action is a plain simple js function
 
-import { ADD_TO_CART, REMOVE_FROM_CART } from "./constant"
+import { ADD_TO_CART, EMPTY_CART, REMOVE_FROM_CART } from "./constant"
 
 // action created
 export const addToCart = (product) =>{
@@ -22,6 +22,16 @@ export const removeFromCart = (product) =>{
         type: REMOVE_FROM_CART,
         // now directly sending data , but we'll use saga, all logic in future session
         data: product
+    }
+}
+
+
+export const emptyCart = () =>{
+    // since we dont need data here we dont use parameters , this is because we are not sending anything to it
+    console.warn("empty action called");
+    return{
+        type: EMPTY_CART,
+        // data: product
     }
 }
 

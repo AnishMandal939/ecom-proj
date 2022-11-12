@@ -3,7 +3,7 @@
 // parameter: 1= we have to initialize it mandatory, 2nd = action - responsible for data sending(data/type that is beign send from action)
 // data = blank array because cart data will increase or decrease & that is inside array so initialized blank array
 
-import { ADD_TO_CART, REMOVE_FROM_CART } from "./constant";
+import { ADD_TO_CART, EMPTY_CART, REMOVE_FROM_CART } from "./constant";
 
 // 
 export const cartData = (data=[], action) => {
@@ -30,13 +30,24 @@ export const cartData = (data=[], action) => {
             // action.data returns new data , where as ...data returns previous data by destructuring
             return [action.data, ...data];
         case REMOVE_FROM_CART:
-            // logic here, eg: addToCart
+            // logic here, eg: RemoveFromCart
             console.warn("remove from cart called", action);
-            return 1-1;
+            // removing data 1 by 1
+            // data.length= data.length-1; // data.length-=1
+            // data.length-=1; for error handle if data is less than zero while removing item
+            data.length = data.length ? data.length-1:[];
+            return [...data];
+        case EMPTY_CART:
+            // logic here, eg: emptyCart
+            console.warn("empty cart called", action);
+            // to remove data
+            // just make data blank
+            data = [];
+            return [...data];
         default:
-            // no case matched 
-            // return 'no action called';
-            return data;
+        // no case matched 
+        // return 'no action called';
+        return data;
 
     }
 }
