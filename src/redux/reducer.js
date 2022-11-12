@@ -26,14 +26,18 @@ export const cartData = (data=[], action) => {
         case ADD_TO_CART:
             // logic here, eg: addToCart
             console.warn("add to cart called", action);
-            return 1+1;
+            // return 1+1;
+            // action.data returns new data , where as ...data returns previous data by destructuring
+            return [action.data, ...data];
         case REMOVE_FROM_CART:
             // logic here, eg: addToCart
             console.warn("remove from cart called", action);
-            return 1-1;
+            // return 1-1;
+            return [action.data, ...data]
         default:
             // no case matched 
-            return 'no action called';
+            // return 'no action called';
+            return data;
 
     }
 }

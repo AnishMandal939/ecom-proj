@@ -136,7 +136,18 @@ Topics Covered:
 -   Make Switch Statement
 -   Check Some with Switch Statement
 
+--------------------------------
 
 ### day -5 🤔 ✅ ▤ get data from redux to component
 
+-   Topics covered :
+    - Make header and main component
+        1. Create component 📂
+        2. create file - 🗃
+    - Add images and css
+    - Send Data from main component
+    - Get Data in Header component
+    - Interview Question
 
+        1. How can you get data from redux to react ? -> using useSelector hook
+        2. where you can make use of useSelector hook ? while fetching data from redux to react
