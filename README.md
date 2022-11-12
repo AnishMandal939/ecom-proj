@@ -195,4 +195,27 @@ Topics Covered:
 
 ### day -8 : Configure Saga 🔯 🖖 ( Middleware to handle promise )
 
+-   Topics 🛐 Covered
+    - Make Saga file and Saga basic function.
+        - Saga & thunk both are middleware 
+        - install saga - npm i redux-saga
+            - create file - productSaga.js ( here we'll work with saga) & 
+            - store.js - we'll use to to register productSaga
+
+    - Register saga middleware with store
+        - once you register it in store.js
+        - you also need to run it
+        - middleware takes callback function
+        - & when you run middleware just pass the function what you want to call
+    - Check flow
+    - Interview Question
+        - Why do we use *(star) in saga file - productSaga.js for eg: that means it is a generator function
+        - why do we use generator functions ? to handle async await 
+
+
+
+----------------------
+
+### day -9 JSON server | How to make API with JSON server
+
 
