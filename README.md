@@ -268,5 +268,19 @@ Topics Covered:
 
 -   Topics 🛐 Covered
 
+    - Show product in UI
+        - main.js
+    - Add Style to Product UI
+    - Load Product when Page Load
+        - using useEffect we will dispatch data on load instead of onclick, since we are getting data on load we dont need button getData on click
+    - Add cart and remove Cart UI with API Data
+        - in this case remove is not done because we are removing only last data as per logic now in next we will learn how to remove
 
+    - Interview Question
+
+---------------------
+
+### day- 12 : Remove Specific item  from Cart on behalf of data | Remove item from cart
+
+-   Topics 🛐 Covered
 
