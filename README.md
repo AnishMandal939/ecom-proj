@@ -240,4 +240,33 @@ Topics Covered:
         
 ----------------------
 
-### day -10 
+### day -10 Call ☎️ Api 🧑‍💻 with redux Saga ✅
+
+-   Topics 🛐 Covered
+    - Call Saga function from action
+        - We cannot call directly an api, we need a saga file also , 1st of all we'll call this saga file from action ->  & here we will call api& result will be directly placed inside reducer,
+        - ? Why we need Saga file -> Because: directly action cannot handle the async operation, 
+        but saga can do it
+        - ? how will you call the saga file ->
+            - with the help of `type ` defined in Action file
+            - then it will be called through Saga file, but if it is not found then it will go to reducer 
+            -  1st import {takeEvery} from 'redux-saga/effects'
+    - Make function in Saga for API
+        - getProducts() - were created
+    - Send Result from Saga to Action
+        - create constant to send data -  SET_PRODUCT_LIST
+    - Pass data to Reducer
+        - & call directly saga from action file using put function, to use this type we need to import in productReducer
+    - Get data in Main Component
+        - we have used console to return data ,next we'll see to render in UI
+    - Interview Question
+
+------------------------
+
+
+### day- 11 : product list UI 🧑‍💻 with API data 💽
+
+-   Topics 🛐 Covered
+
+
+

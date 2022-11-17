@@ -1,14 +1,19 @@
 
-import { PRODUCT_LIST } from "./constant";
+import { PRODUCT_LIST, SET_PRODUCT_LIST } from "./constant";
 
 // 
 export const productData = (data=[], action) => {
 
     switch(action.type){
-        case PRODUCT_LIST:
+        // now we dont need this , because saga file is  now there to handle
+        // case PRODUCT_LIST:
+        //     // logic here, eg: product_listCart
+        //     console.warn("PRODUCT_LIST called", action);
+        //     return [action.data];
+        case SET_PRODUCT_LIST:
             // logic here, eg: product_listCart
-            console.warn("PRODUCT_LIST called", action);
-            return [action.data];
+            console.warn("SET_PRODUCT_LIST called", action);
+            return [...action.data];
         
         default:
         // no case matched 
